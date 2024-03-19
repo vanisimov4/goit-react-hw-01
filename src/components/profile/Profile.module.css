@@ -1,25 +1,52 @@
 .wrapper {
-    width: 800px;
-    position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-border: 3px solid black;
-border-radius: 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 20px;
-    /* background-color: #1a1a1a; */
+  width: 390px;
+margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .wrapper div {
-    text-align: center;
+  text-align: center;
+}
+
+.avatar {
+    background-color: rgb(46, 54, 54);
 }
 
 img {
-    border-radius: 50%;
-    border: 3px solid black;
-    width: 300px
+  border-radius: 50%;
+  border: 3px solid black;
+  width: 150px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.userdata {
+  font-size: 1.4em;
+}
+
+ul {
+  display: flex;
+  background-color: darkgray;
+}
+
+li {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.value {
+  font-weight: bold;
 }
