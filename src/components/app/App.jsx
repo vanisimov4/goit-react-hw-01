@@ -1,17 +1,10 @@
 import userData from '../../userData.json';
+import friends from "../../friends.json";
+
 import Profile from '../profile/Profile';
 import FriendList from '../friendList/FriendList';
 
-const friends = {
-  avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
-  name: 'Mango',
-  isOnline: true,
-  id: 1812,
-};
-
 const App = () => {
-  console.log(friends.name);
-  console.log(friends);
   return (
     <>
       <Profile
@@ -21,7 +14,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friend={friends} />
+      <FriendList friends={friends} />
     </>
   );
 };

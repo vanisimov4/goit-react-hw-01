@@ -1,13 +1,21 @@
 import FriendListItem from '../friendListItem/FriendListItem';
 
-const FriendList = ({ friend }) => {
-  console.log(friend.name);
+const FriendList = ({ friends }) => {
   return (
     <ul>
       {/* Кількість li залежить від кількості об'єктів в масиві */}
-      <li>
-        <FriendListItem avatar={friend.avatar} name={friend.name} />
-      </li>
+      {friends.map(friend => {
+        return (
+          <li key={friend.id}>
+            <FriendListItem
+              avatar={friend.avatar}
+              name={friend.name}
+              isOnline={friend.isOnline}
+            />
+          </li>
+        );
+      })}
+      ;
     </ul>
   );
 };
