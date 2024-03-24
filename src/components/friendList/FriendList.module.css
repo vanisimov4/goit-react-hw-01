@@ -1,0 +1,19 @@
+.list {
+    display: flex;
+    gap: 10px;
+margin: 0 auto;
+    justify-content: center;
+    padding: 30px;
+}
+
+.list li {
+width: auto;
+border: 2px solid black;
+border-radius: 10px;
+padding: 10px;
+}
+
+.list p {
+    margin: 0;
+    text-align: center;
+}

@@ -17,7 +17,7 @@ margin: 0 auto;
     background-color: rgb(46, 54, 54);
 }
 
-img {
+.wrapper img {
   border-radius: 50%;
   border: 3px solid black;
   width: 150px;
@@ -32,12 +32,12 @@ img {
   font-size: 1.4em;
 }
 
-ul {
+.wrapper ul {
   display: flex;
   background-color: darkgray;
 }
 
-li {
+.wrapper li {
   width: 130px;
   display: flex;
   flex-direction: column;

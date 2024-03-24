@@ -1,8 +1,9 @@
 import FriendListItem from '../friendListItem/FriendListItem';
+import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <ul className={css.list}>
       {/* Кількість li залежить від кількості об'єктів в масиві */}
       {friends.map(friend => {
         return (
@@ -15,7 +16,6 @@ const FriendList = ({ friends }) => {
           </li>
         );
       })}
-      ;
     </ul>
   );
 };
