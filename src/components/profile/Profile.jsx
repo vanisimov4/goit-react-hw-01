@@ -1,6 +1,6 @@
 import css from './Profile.module.css';
 
-const Product = ({ name, tag, location, image, stats }) => (
+const Profile = ({ name, tag, location, image, stats }) => (
   <div className={css.wrapper}>
     <div>
       <img className={css.avatar} src={image} alt="User avatar" />
@@ -26,4 +26,4 @@ const Product = ({ name, tag, location, image, stats }) => (
   </div>
 );
 
-export default Product;
+export default Profile;
